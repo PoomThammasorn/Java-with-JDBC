@@ -4,6 +4,19 @@
 
 The Refrigerator Expiry Tracker is a JavaFX application designed to help you manage and track the expiration dates of items in your refrigerator. The program allows you to add, update, and delete items, while also providing a visual representation of the time left before an item expires.
 
+## Table of Contents
+
+- [Features](#features)
+- [How to Use](#how-to-use)
+- [Code Structure and Concepts](#code-structure-and-concepts)
+  - [Control Structures](#subroutines)
+- [Objects and Classes](#objects-and-classes)
+- [JavaFX](#javafx)
+- [Correctness, Robustness, Efficiency](#correctness-robustness-efficiency)
+- [Input/Output Streams, Files, and Networking](#inputoutput-streams-files-and-networking)
+- [JDBC and CRUD Operations](#jdbc-and-crud-operations)
+
+
 ## Features
 
 - **Add, Update, and Delete**: Easily add new items to your refrigerator, update existing ones, and remove items when needed.
