@@ -9,8 +9,8 @@ import java.util.List;
 public class DB {
 
     static String url = "jdbc:postgresql:fridgeList"; // change name to name of DB
-    static String user = "root";
-    static String password = "root";
+    static String user = "root"; // change to your username
+    static String password = "root"; // change to your password
 
     @SuppressWarnings("all")
     public static int insertData(String name, int day, String month, int year) {
