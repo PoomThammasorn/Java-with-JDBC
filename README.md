@@ -2,6 +2,8 @@
 
 This Java application serves as a Refrigerator Expiry Tracker, allowing users to manage and track the expiration dates of items stored in their refrigerator.
 
+<img src="https://github.com/PoomThammasorn/Java_with_JDBC/assets/111583306/56614439-8930-4ef1-a176-9b9410f8b306" alt="image" width="400"/>
+
 ## Table of Contents
 
 - [Getting Started](#getting-started)
@@ -46,6 +48,8 @@ Efficiency considerations may include potential enhancements for scalability, es
 
 ## Input/Output Streams, Files, and Networking
 
+![image](https://github.com/PoomThammasorn/Java_with_JDBC/assets/111583306/fab726a5-cdd1-4de4-a29d-a2b8c2a2653c)
+
 The application demonstrates basic Input/Output (I/O) operations with file handling. The `exportData` method writes data to a file, and file reading is showcased. Networking features are commented out but could be expanded based on project requirements.
 
 ## JDBC and CRUD Operations
@@ -53,4 +57,3 @@ The application demonstrates basic Input/Output (I/O) operations with file handl
 The program interacts with a relational database (assumed PostgreSQL) using JDBC. CRUD operations (`Create`, `Read`, `Update`, `Delete`) are performed through methods like `DB.insertData`, `DB.readData`, `DB.updateData`, and `DB.deleteData`.
 
 Feel free to explore and contribute to the development of this Refrigerator Expiry Tracker!
-
