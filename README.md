@@ -1,87 +1,56 @@
 # Refrigerator Expiry Tracker
 
-## Overview
-
-The Refrigerator Expiry Tracker is a JavaFX application designed to help you manage and track the expiration dates of items in your refrigerator. The program allows you to add, update, and delete items, while also providing a visual representation of the time left before an item expires.
+This Java application serves as a Refrigerator Expiry Tracker, allowing users to manage and track the expiration dates of items stored in their refrigerator.
 
 ## Table of Contents
 
-1. [Features](#features)
-2. [How to Use](#how-to-use)
-3. [Code Structure and Concepts](#code-structure-and-concepts)
-4. [JDBC and CRUD Operations](#jdbc-and-crud-operations)
-5. [Relational Database Schema](#relational-database-schema)
+- [Getting Started](#getting-started)
+- [Control Structures](#control-structures)
+- [Subroutines](#subroutines)
+- [Objects and Classes](#objects-and-classes)
+- [JavaFX](#javafx)
+- [Correctness, Robustness, Efficiency](#correctness-robustness-efficiency)
+- [Input/Output Streams, Files, and Networking](#inputoutput-streams-files-and-networking)
+- [JDBC and CRUD Operations](#jdbc-and-crud-operations)
 
+## Getting Started
 
-## Features
+To use the Refrigerator Expiry Tracker, follow these steps:
 
-- **Add, Update, and Delete**: Easily add new items to your refrigerator, update existing ones, and remove items when needed.
+1. Clone the repository to your local machine.
+2. Open the project in your preferred Java development environment.
+3. Run the `App.java` file to start the application.
+4. The application window will appear, providing options to add, update, delete, and view refrigerator items.
 
-- **Clear and Refresh**: Clear all input fields or refresh the displayed data with a click of a button.
+## Control Structures
 
-- **Time Left Indicator**: The program calculates and displays the time left for each item to expire, providing a clear indication of its freshness.
+The program utilizes various control structures such as `if` statements, `for` loops, and event handling with JavaFX. These structures control the flow of the program based on user interactions.
 
-- **Export Data**: Export the contents of the refrigerator to a file for easy backup or sharing.
+## Subroutines
 
-- **JavaFX UI**: The program utilizes JavaFX for a user-friendly and interactive graphical user interface.
+Subroutines, or methods, are used to modularize the code and handle specific functionalities. Methods like `start`, `createRoot`, `setupTitle`, and others encapsulate distinct parts of the program.
 
-- **Correctness, Robustness, Efficiency**: The code is designed to be correct, robust to handle various scenarios, and efficient in its execution.
+## Objects and Classes
 
-## How to Use
+The `Material` class represents objects in the application. Instances of this class are created to manage and display data related to refrigerator items.
 
-1. **Add an Item**: Enter the name, expiration date, and other details in the input fields. Click the "Add" button to add the item to the refrigerator.
+## JavaFX
 
-2. **Update an Item**: Select a row in the table, modify the desired fields, and click the "Update" button to save the changes.
+The Refrigerator Expiry Tracker is built using JavaFX, a framework for creating graphical user interfaces in Java. It employs JavaFX components like `VBox`, `Text`, `GridPane`, `TableView`, and `Button` to create a user-friendly interface.
 
-3. **Delete an Item**: Select a row in the table and click the "Delete" button to remove the item from the refrigerator.
+## Correctness, Robustness, Efficiency
 
-4. **Clear Input Fields**: Click the "Clear" button to reset all input fields.
+The code aims for correctness by handling basic CRUD operations on refrigerator items. Error handling is present for parsing integers, and the program is intended to be robust to user input.
 
-5. **Refresh Data**: Click the "Refresh" button to reload and display the latest data in the table.
+Efficiency considerations may include potential enhancements for scalability, especially in database operations.
 
-6. **Export Data**: Click the "Export" button to save the current refrigerator contents to a file.
+## Input/Output Streams, Files, and Networking
 
-7. **Check Expiry Status**: The "Time Left" column indicates how much time is left before an item expires.
-
-## Code Structure and Concepts
-
-- **Control Structures**: The program uses various control structures, such as `if-else` statements and loops, to manage the flow of execution based on different conditions.
-
-- **Subroutines**: Common operations are encapsulated in methods like `updateDayDropdown()`, `deleteSelectedRow(table)`, and `loadDataIntoTable(table)` for better code organization and reusability.
-
-- **Objects and Classes**: The `Material` class represents items stored in the refrigerator, and the program uses objects of this class to manage data.
-
-- **JavaFX**: The graphical user interface is implemented using JavaFX, providing an interactive and visually appealing experience.
-
-- **Correctness, Robustness, Efficiency**: The code is designed to be correct in its functionality, robust to handle unexpected inputs or errors, and efficient in terms of data processing.
-
-- **Input/Output Streams, Files, and Networking**: The program demonstrates file input/output operations, specifically writing and reading refrigerator contents to/from a text file.
-
-- **JDBC and CRUD Operations**: The application connects to a PostgreSQL database using JDBC, performing CRUD operations (Create, Read, Update, and Delete) with the relational database.
-
-Feel free to explore and modify the code to suit your needs!
+The application demonstrates basic Input/Output (I/O) operations with file handling. The `exportData` method writes data to a file, and file reading is showcased. Networking features are commented out but could be expanded based on project requirements.
 
 ## JDBC and CRUD Operations
 
-The program utilizes JDBC (Java Database Connectivity) to interact with a PostgreSQL database for managing refrigerator contents. The CRUD operations are explained below:
+The program interacts with a relational database (assumed PostgreSQL) using JDBC. CRUD operations (`Create`, `Read`, `Update`, `Delete`) are performed through methods like `DB.insertData`, `DB.readData`, `DB.updateData`, and `DB.deleteData`.
 
-- **Create (Insert)**: The `addBtn` event handler inserts a new item into the database when the "Add" button is clicked.
+Feel free to explore and contribute to the development of this Refrigerator Expiry Tracker!
 
-- **Read (Select)**: The `loadDataIntoTable(table)` method reads data from the database and populates the table on application startup or when the "Refresh" button is clicked.
-
-- **Update (Update)**: The `updateBtn` event handler updates the selected item's details in the database when the "Update" button is clicked.
-
-- **Delete (Delete)**: The `deleteSelectedRow(table)` method deletes the selected item from both the table and the database when the "Delete" button is clicked.
-
-## Relational Database Schema
-
-The database schema consists of a single table named `materials` with the following columns:
-
-- `id` (Serial): Unique identifier for each item.
-- `name` (VARCHAR): Name of the item.
-- `day` (INT): Day of the expiration date.
-- `month` (VARCHAR): Month of the expiration date.
-- `year` (INT): Year of the expiration date.
-
-
-Happy tracking your refrigerator contents!
