@@ -6,15 +6,14 @@ The Refrigerator Expiry Tracker is a JavaFX application designed to help you man
 
 ## Table of Contents
 
-- [Features](#features)
-- [How to Use](#how-to-use)
-- [Code Structure and Concepts](#code-structure-and-concepts)
-  - [Control Structures](#subroutines)
-- [Objects and Classes](#objects-and-classes)
-- [JavaFX](#javafx)
-- [Correctness, Robustness, Efficiency](#correctness-robustness-efficiency)
-- [Input/Output Streams, Files, and Networking](#inputoutput-streams-files-and-networking)
-- [JDBC and CRUD Operations](#jdbc-and-crud-operations)
+1. [Features](#features)
+2. [How to Use](#how-to-use)
+3. [User Interface](#user-interface)
+4. [Code Structure](#code-structure)
+5. [JDBC and CRUD Operations](#jdbc-and-crud-operations)
+6. [Relational Database Schema](#relational-database-schema)
+7. [Contribution](#contribution)
+8. [License](#license)
 
 
 ## Features
