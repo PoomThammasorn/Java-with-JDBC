@@ -20,7 +20,7 @@ public class DB {
             try (Statement statement = connection.createStatement()) {
                 String sql = "INSERT INTO items (name, day, month, year) VALUES ";
                 sql += "('" + name + "', " + day + ", '" + month + "', " + year + ") RETURNING id;";
-                System.out.println(sql);
+                // System.out.println(sql);
                 // Execute the SQL statement and retrieve the generated ID
                 try (ResultSet resultSet = statement.executeQuery(sql)) {
                     if (resultSet.next()) {
@@ -54,6 +54,7 @@ public class DB {
                         Material material = new Material(id, name, day, month, year);
                         materialsList.add(material);
                     }
+                    System.out.println("Read " + materialsList.size() + " row(s) from the table.");
                 }
             }
         } catch (SQLException e) {
@@ -73,7 +74,7 @@ public class DB {
                 sql = "ALTER SEQUENCE items_id_seq RESTART WITH 1;";
                 statement.executeUpdate(sql);
 
-                System.out.println("Deleted " + rowsAffected + " rows from the table.");
+                System.out.println("Deleted " + rowsAffected + " row(s) from the table.");
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -90,7 +91,7 @@ public class DB {
                 System.out.println(sql);
                 int rowsAffected = statement.executeUpdate(sql);
                 if (rowsAffected > 0) {
-                    System.out.println("Update data " + rowsAffected + " rows.");
+                    System.out.println("Update data " + rowsAffected + " row(s).");
                 }
             }
         } catch (SQLException e) {
