@@ -1,0 +1,52 @@
+Today's date: 10 DECEMBER 2023
+
+ID: 1
+Name: Milk
+Expire Date: 5 January 2019
+Time Left: Expired!
+-----
+ID: 2
+Name: Eggs
+Expire Date: 10 February 2024
+Time Left: Expires in 2 month(s) 
+-----
+ID: 3
+Name: Cheese
+Expire Date: 15 March 2025
+Time Left: Expires in 1 year(s) 3 month(s) 5 day(s)
+-----
+ID: 4
+Name: Yogurt
+Expire Date: 20 April 2023
+Time Left: Expired!
+-----
+ID: 5
+Name: Vegetables
+Expire Date: 25 May 2024
+Time Left: Expires in 5 month(s) 15 day(s)
+-----
+ID: 6
+Name: Fruits
+Expire Date: 1 June 2025
+Time Left: Expires in 1 year(s) 5 month(s) 22 day(s)
+-----
+ID: 7
+Name: Meat
+Expire Date: 5 July 2023
+Time Left: Expired!
+-----
+ID: 8
+Name: Bread
+Expire Date: 10 August 2024
+Time Left: Expires in 8 month(s) 
+-----
+ID: 9
+Name: Juice
+Expire Date: 15 September 2025
+Time Left: Expires in 1 year(s) 9 month(s) 5 day(s)
+-----
+ID: 10
+Name: Soda
+Expire Date: 20 October 2053
+Time Left: Expires in 29 year(s) 10 month(s) 10 day(s)
+-----
