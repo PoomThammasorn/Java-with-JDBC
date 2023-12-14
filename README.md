@@ -55,7 +55,7 @@ The application demonstrates basic Input/Output (I/O) operations with file handl
 
 ## JDBC and CRUD Operations
 
-The program interacts with a relational database (assumed PostgreSQL) using JDBC. CRUD operations (`Create`, `Read`, `Update`, `Delete`) are performed through methods like `DB.insertData`, `DB.readData`, `DB.updateData`, and `DB.deleteData`.
+The program interacts with PostgreSQL database using JDBC. CRUD operations (`Create`, `Read`, `Update`, `Delete`) are performed through methods like `DB.insertData`, `DB.readData`, `DB.updateData`, and `DB.deleteData`.
 
 <img width="382" alt="image" src="https://github.com/PoomThammasorn/Java_with_JDBC/assets/111583306/efb80a88-0e34-45d0-8818-a019f2ed7981" width="300">
 
